@@ -6,8 +6,8 @@ branches:
     - master
 
 image:
-  - macos-mojave
   - Ubuntu1804
+  - macos-mojave
 
 # scripts that are called at very beginning, before repo cloning
 init:

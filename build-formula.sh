@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -x
 set -euo pipefail
 
 # Get path of this script so that paths are relative to it.
@@ -41,7 +41,7 @@ EOM
 
 
 LOCAL_FORK=0
-AWS_TAP="aws/tap"
+AWS_TAP="c2tarun/tap"
 USER_TAP=""
 TAP="${AWS_TAP}"
 
@@ -117,6 +117,7 @@ check_and_install_brew_pkg jq
 
 
 echo "🎬 Starting formula build for ${FORMULA_FILE}"
+echo "🗑 Uninstalling ${BOTTLE}"
 brew uninstall -f ${BOTTLE}
 
 ## Build formula from source locally

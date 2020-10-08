@@ -1,4 +1,4 @@
-#!/usr/bin/env bash -x
+#!/usr/bin/env bash
 set -euo pipefail
 
 # Get path of this script so that paths are relative to it.

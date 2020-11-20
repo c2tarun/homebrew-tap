@@ -121,7 +121,7 @@ echo "🗑 Uninstalling ${BOTTLE}"
 brew uninstall -f ${BOTTLE}
 
 ## Build formula from source locally
-brew install --build-from-source "${SCRIPTPATH}/${FORMULA_FILE}" "${TAP}/${BOTTLE}"
+brew install --build-from-source "${SCRIPTPATH}/${FORMULA_FILE}"
 brew uninstall -f ${BOTTLE}
 ## Build bottle
 brew install --build-bottle ${TAP}/${BOTTLE}
